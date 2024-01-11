@@ -1,0 +1,65 @@
+<p>user works!</p>
+
+<div class="row p-4">
+  <div class="col-sm-12">
+    <div class="card card-border-default">
+      <div class="card-header">
+        <h5>Create User</h5>
+      </div>
+
+      <div class="card-body"> 
+        <!-- <form [formGroup]="entryForm" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off"> -->
+          <div class="row">
+            <div class="col-lg-10 col-md-9 col-12">
+              <div class="mb-3 row">
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label class="col-form-label col-form-label-sm required">
+                    Employee Id
+                  </label>
+                  <input type="text" class="form-control form-control-sm">
+                </div>  
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label class="col-form-label col-form-label-sm required">
+                    FirstName </label>
+                  <input type="text"
+                    class="form-control form-control-sm">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <label class="col-form-label col-form-label-sm">
+                    Last Name 
+                  </label>                    
+                  <input type="text" class="form-control form-control-sm" >
+                </div>
+              </div>
+            </div>   
+          </div>
+        <!-- </form>             -->
+        <hr/> 
+      </div> 
+
+      <div class="card-footer">
+        <div class="row">
+          <div class="col-lg-2 offset-lg-4 col-md-3 offset-md-3 col-sm-6">
+            <button class="btn btn-outline-secondary btn-sm btn-block">
+              <i class="feather icon-arrow-left "></i>
+              Go back to list
+            </button>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <button class="btn btn-theme  btn-sm btn-block" (click)="onFormSubmit()">
+              <i class="feather icon-check"></i> 
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>    
+
+
